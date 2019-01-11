@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div id="content">
+        <h1>Pretty Forms Plz</h1>
+        <p>Are you a teacher or club leader who collects requests or applications via Google Forms?</p>
+        <p>Are you tired of destroying your eyes trying to read essay responses from a spreadsheet?</p>
+        <p>Despair no more! It's time for Pretty Forms!</p>
+
+        <h2>Instructions</h2>
+        <p>Just drop a .csv of your form responses below!</p>
+
+        <form action="{{ pretty_print_url }}" method="post" enctype="multipart/form-data" id="form">
+            <input type="text" name="title" placeholder="Form Title"><br>
+            <input type="file" name="form_responses"><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+
+        <p id="alert"></p>
+    </div>
+{% endblock %}

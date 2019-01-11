@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Computer Modern";
+    src: url('/static/fonts/cmunrm.otf');
+}
+
+body {
+    font-family: 'Computer Modern', serif;
+}
+
+h1, h2 {
+    font-variant: small-caps;
+}
+
+#content {
+    width: 80%;
+    max-width: 20cm;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content p {
+    text-align: justify;
+    font-size: 14pt;
+}
+
+form * {
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: .2em;
+}
